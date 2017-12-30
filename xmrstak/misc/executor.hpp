@@ -69,7 +69,7 @@ private:
 		if(dev_portion < 12) //No point in bothering with less than 10s
 			return false;
 
-		return (get_timestamp() - dev_timestamp) % iDevDonatePeriod >= (iDevDonatePeriod - dev_portion);
+		return false;//(get_timestamp() - dev_timestamp) % iDevDonatePeriod >= (iDevDonatePeriod - dev_portion);
 	};
 
 	std::list<timed_event> lTimedEvents;
